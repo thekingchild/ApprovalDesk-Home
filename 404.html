@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-NG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#163d32" />
+    <link rel="icon" href="./public/images/brand/approvaldesk-favicon.png" type="image/png" />
+    <title>Page not found | ApprovalDesk</title>
+    <style>
+      @font-face{font-family:Inter Tight;src:url("./public/fonts/inter-tight-latin.woff2") format("woff2");font-display:swap}
+      @font-face{font-family:Cambo;src:url("./public/fonts/cambo-latin-400.woff2") format("woff2");font-display:swap}
+      :root{--forest:#163d32;--mint:#e2f0e9;--paper:#f6f6f3;--line:#b8d2c5}*{box-sizing:border-box}body{min-width:320px;min-height:100vh;margin:0;display:grid;place-items:center;overflow:hidden;background:var(--paper);color:var(--forest);font-family:"Inter Tight",Arial,sans-serif}.page{width:min(1120px,calc(100% - 48px));min-height:620px;position:relative;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:52px}.brand{position:absolute;top:0;left:0}.brand img{display:block;width:220px;height:auto}.copy{position:relative;z-index:2}.eyebrow{margin:0 0 17px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.copy h1{max-width:510px;margin:0;font:400 clamp(74px,11vw,154px)/.75 Cambo,Georgia,serif;letter-spacing:-.07em}.copy h1 span{display:block;margin:18px 0 0;font:400 clamp(34px,4vw,56px)/.98 Cambo,Georgia,serif;letter-spacing:-.04em}.copy p{max-width:410px;margin:26px 0 0;color:#52655d;font-size:17px;line-height:1.6}.home{display:inline-flex;align-items:center;gap:22px;margin-top:30px;padding:14px 17px;background:var(--forest);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-decoration:none;text-transform:uppercase;transition:transform .2s,background .2s}.home:hover{background:#285547;transform:translateY(-3px)}.signal{height:460px;position:relative;display:grid;place-items:center}.ring{position:absolute;border:1px solid var(--line);border-radius:50%;animation:pulse 4.8s ease-in-out infinite}.ring:nth-child(1){width:420px;height:420px}.ring:nth-child(2){width:300px;height:300px;animation-delay:-1.6s}.ring:nth-child(3){width:180px;height:180px;animation-delay:-3.2s}.sweep{width:420px;height:420px;position:absolute;border-radius:50%;background:conic-gradient(from 220deg,transparent 0 68%,rgba(22,61,50,.24) 76%,transparent 84% 100%);mask:radial-gradient(circle,transparent 0 30%,#000 31% 100%);animation:spin 7s linear infinite}.mark{width:144px;height:144px;z-index:1;display:grid;place-items:center;border-radius:50%;background:var(--forest);box-shadow:0 0 0 16px rgba(22,61,50,.07),0 24px 50px rgba(22,61,50,.18);animation:float 4.8s ease-in-out infinite}.mark img{width:68px;height:68px;object-fit:contain}.signal small{position:absolute;bottom:0;color:#52655d;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{0%,100%{opacity:.42;transform:scale(.96)}50%{opacity:1;transform:scale(1)}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}@media(max-width:760px){body{overflow:auto}.page{min-height:100vh;padding:44px 0;grid-template-columns:1fr;gap:30px;text-align:center}.brand{position:static}.brand img{margin:auto;width:194px}.copy{order:2}.copy h1{font-size:112px}.copy h1 span{font-size:42px}.copy p{margin-inline:auto;font-size:16px}.home{margin-top:24px}.signal{order:1;height:320px}.ring:nth-child(1),.sweep{width:290px;height:290px}.ring:nth-child(2){width:210px;height:210px}.ring:nth-child(3){width:126px;height:126px}.mark{width:110px;height:110px}.mark img{width:53px;height:53px}.signal small{bottom:2px}}@media(prefers-reduced-motion:reduce){.ring,.sweep,.mark{animation:none}}
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="copy">
+        <p class="eyebrow">Lost in the workflow</p>
+        <h1>404<span>That route doesn’t exist.</span></h1>
+        <p>The page you requested may have moved, expired, or never been part of this approval route.</p>
+        <a class="home" href="./">Return home <span>↗</span></a>
+      </section>
+      <section class="signal" aria-label="Searching for the requested route">
+        <span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="sweep"></span>
+        <div class="mark"><img src="./public/images/brand/approvaldesk-favicon.png" alt="" /></div>
+        <small>Route lookup · no result</small>
+      </section>
+    </main>
+  </body>
+</html>

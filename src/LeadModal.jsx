@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
-const STATIC_FORMS_ENDPOINT = "https://api.staticforms.dev/submit/sf_50db0aafa5bd7dcf584490f5";
+const STATIC_FORMS_ENDPOINT = "https://api.staticforms.dev/submit";
+const STATIC_FORMS_API_KEY = "sf_50db0aafa5bd7dcf584490f5";
 
 const copy = {
   demo: {
@@ -35,13 +36,14 @@ export function LeadModal({ mode, onClose }) {
     const data = new FormData(form);
     if (data.get("website")) return;
     setStatus("sending");
+    data.set("apiKey", STATIC_FORMS_API_KEY);
     data.set("subject", mode === "demo" ? "ApprovalDesk demo request" : "ApprovalDesk SaaS waitlist request");
     data.set("message", `Interest: ${mode === "demo" ? "Managed demo" : "SaaS waitlist"}\nOrganisation: ${data.get("company")}\nRole: ${data.get("role")}\nTeam size: ${data.get("team_size")}\nPhone: ${data.get("phone")}\nWorkflow context: ${data.get("workflow_context") || "Not provided"}`);
 
     try {
       const response = await fetch(STATIC_FORMS_ENDPOINT, { method: "POST", body: data });
-      const result = await response.json();
-      setStatus(response.ok && result.success ? "success" : "error");
+      const result = await response.json().catch(() => null);
+      setStatus(response.ok && result?.success ? "success" : "error");
     } catch {
       setStatus("error");
     }

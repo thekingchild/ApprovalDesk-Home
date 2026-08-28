@@ -1,4 +1,5 @@
-const STATIC_FORMS_ENDPOINT = "https://api.staticforms.dev/submit/sf_50db0aafa5bd7dcf584490f5";
+const STATIC_FORMS_ENDPOINT = "https://api.staticforms.dev/submit";
+const STATIC_FORMS_API_KEY = "sf_50db0aafa5bd7dcf584490f5";
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const workflowTabs = [
@@ -234,12 +235,13 @@ function openLeadModal(mode) {
     submit.disabled = true;
     submit.firstElementChild.textContent = "Sending…";
     error.hidden = true;
+    data.set("apiKey", STATIC_FORMS_API_KEY);
     data.set("subject", mode === "demo" ? "ApprovalDesk demo request" : "ApprovalDesk SaaS waitlist request");
     data.set("message", `Interest: ${mode === "demo" ? "Managed demo" : "SaaS waitlist"}\nOrganisation: ${data.get("company")}\nRole: ${data.get("role")}\nTeam size: ${data.get("team_size")}\nPhone: ${data.get("phone")}\nWorkflow context: ${data.get("workflow_context") || "Not provided"}`);
     try {
       const response = await fetch(STATIC_FORMS_ENDPOINT, { method: "POST", body: data });
-      const result = await response.json();
-      if (!response.ok || !result.success) throw new Error("Submission failed");
+      const result = await response.json().catch(() => null);
+      if (!response.ok || !result?.success) throw new Error("Submission failed");
       backdrop.querySelector(".lead-modal-content").innerHTML = `<div class="lead-success"><p class="micro">THANK YOU</p><h2>${details.success}</h2><p>We’ll be in touch using the details you shared.</p><button type="button">Close</button></div>`;
       backdrop.querySelector(".lead-success button").addEventListener("click", close);
     } catch {

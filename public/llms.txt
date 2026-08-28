@@ -1,0 +1,18 @@
+# ApprovalDesk
+
+> Managed, audit-ready approval workflow software for businesses.
+
+ApprovalDesk helps organisations route requests through their chosen chain of authority, automate decisions, and retain an accountable record of actions, comments, documents, deadlines, and workflow events. The current product is delivered as a managed instance; customer self-hosting is not offered. A SaaS version is coming soon.
+
+## Key pages
+
+- [Homepage](https://approvaldesk.ng/): Product capabilities, use cases, security overview, and frequently asked questions.
+- [Privacy Policy](https://approvaldesk.ng/privacy): Privacy and data-governance information.
+- [Terms of Service](https://approvaldesk.ng/terms): Terms for the managed ApprovalDesk service.
+
+## Company and contact
+
+ApprovalDesk is developed by OHR Systems and supported by IChannel Technologies. Both companies are registered in Nigeria.
+
+- Product, commercial, and privacy enquiries: hello@ohrsystems.ng
+- Implementation and support enquiries: hello@ichanneltech.com

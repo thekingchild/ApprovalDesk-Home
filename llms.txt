@@ -1,0 +1,46 @@
+# ApprovalDesk
+
+> ApprovalDesk is managed, audit-ready approval workflow software for businesses. It routes requests, documents, notes and memos through an organisation's exact chain of authority and keeps a tamper-proof, append-only record of who approved what, and when.
+
+ApprovalDesk is delivered as a managed instance: the team configures, deploys, maintains and supports it, so customers do not need an IT department to run it. Customer self-hosting is not offered. A SaaS version is coming soon and has a waitlist.
+
+ApprovalDesk is developed by OHR Systems and supported by IChannel Technologies. Both companies are registered in Nigeria.
+
+## What it does
+
+- Approval routing: sequential, parallel, committee, quorum-based, conditional (by amount or other rules), automatic approval, delegation and escalation.
+- Workflow versioning: published workflow versions stay attached to the requests that used them, so later changes do not rewrite history.
+- Deadlines: SLA timers, reminders, delegation and escalation keep overdue requests moving.
+- Decisions from anywhere: approvers use a focused decision queue, or time-limited signed links sent by email or enabled messaging channels. They can approve, approve with conditions, reject, return, request information, delegate or escalate.
+- Audit trail: every decision, revision, reminder, delegation and workflow event is added as a new, timestamped and attributed history entry. Recorded actions cannot be silently edited or removed. Authorised administrators and auditors can create verifiable evidence packs for individual requests.
+- Security: role-based and field-level access, passkeys, two-factor authentication and SSO, signed expiring links for private attachments, redaction of sensitive answers from exports, and logging of access to sensitive values.
+- Integrations: notifications and post-approval actions through configured services such as Microsoft Teams, Slack, Google Drive, SharePoint, OneDrive, Gmail, Outlook, webhooks and other approved messaging channels. Included integrations are confirmed during onboarding.
+- Hosting: data is hosted in a managed ApprovalDesk instance operated by the team. Security, access, backup and data-location requirements are agreed and documented during onboarding.
+
+## Who it is for
+
+- Finance: loan, credit, expense and committee approvals with exposure-based routing.
+- Public sector: procurement and memo routing with visible ownership and due-process evidence.
+- Healthcare: urgent supply and operational requests protected by deadlines and escalation.
+- Education: student, faculty and finance approvals in one transparent chain.
+- Multi-site teams: branch requests decided centrally without losing local context.
+
+## Key pages
+
+- [Homepage](https://approvaldesk.ng/): Product overview, how it works, features, industries, security and FAQ.
+- [How it works](https://approvaldesk.ng/#how): How requests move from submission to an audit-ready decision.
+- [Features](https://approvaldesk.ng/#features): Accountability, speed, flexibility and insight capabilities.
+- [Industries](https://approvaldesk.ng/#industries): Finance, public sector, healthcare, education and multi-site teams.
+- [Security](https://approvaldesk.ng/#security): Access control, authentication and the managed instance.
+- [FAQ](https://approvaldesk.ng/#faq): Answers on hosting, integrations, audit trail, hierarchies and the SaaS version.
+- [Privacy Policy](https://approvaldesk.ng/privacy/): Privacy and data-governance information.
+- [Terms of Service](https://approvaldesk.ng/terms/): Terms for the managed ApprovalDesk service.
+
+## Getting started
+
+Book a managed demo or join the SaaS waitlist from the homepage.
+
+## Company and contact
+
+- Product, commercial and privacy enquiries: hello@ohrsystems.ng
+- Implementation and support enquiries: hello@ichanneltech.com

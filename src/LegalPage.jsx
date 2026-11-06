@@ -49,7 +49,7 @@ export function LegalPage({ type }) {
   const policy = policies[type];
 
   useEffect(() => {
-    setPageMetadata({ title: `${policy.title} | ApprovalDesk`, description: policy.summary, path: type === "privacy" ? "/privacy" : "/terms" });
+    setPageMetadata({ title: `${policy.title} | ApprovalDesk`, description: policy.summary, path: type === "privacy" ? "/privacy/" : "/terms/" });
     window.scrollTo(0, 0);
   }, [policy.summary, policy.title, type]);
 
